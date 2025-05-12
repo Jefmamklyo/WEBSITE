@@ -32,6 +32,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnProc = new System.Windows.Forms.Button();
             this.lblDisp = new System.Windows.Forms.Label();
+            this.tbUser = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -71,16 +72,25 @@
             this.lblDisp.Size = new System.Drawing.Size(0, 13);
             this.lblDisp.TabIndex = 3;
             // 
-            // Form2
+            // tbUser
+            // 
+            this.tbUser.Location = new System.Drawing.Point(59, 338);
+            this.tbUser.Name = "tbUser";
+            this.tbUser.Size = new System.Drawing.Size(100, 20);
+            this.tbUser.TabIndex = 0;
+            this.tbUser.TextChanged += new System.EventHandler(this.tbUser_TextChanged);
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 659);
+            this.Controls.Add(this.tbUser);
             this.Controls.Add(this.lblDisp);
             this.Controls.Add(this.btnProc);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
+            this.Name = "Form1";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
@@ -94,5 +104,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnProc;
         private System.Windows.Forms.Label lblDisp;
+        private System.Windows.Forms.TextBox tbUser;
     }
 }

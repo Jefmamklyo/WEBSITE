@@ -13,7 +13,8 @@ namespace Actual_Assignment
     public partial class Form1 : Form
     {
         Form2 f2 = new Form2();
-      
+        
+       
         public Form1()
         {
             InitializeComponent();
@@ -36,9 +37,10 @@ namespace Actual_Assignment
 
         private void btnProc_Click(object sender, EventArgs e)
         {
+            
             if (textBox1.Text == "abcd")
             {
-                f2.Close();
+                f2.Show();
                 this.Hide();
                 
 
@@ -48,6 +50,12 @@ namespace Actual_Assignment
                 lblDisp.Text = "PassWord is Wrong" ;
 
             }
+          
         }
+
+        private void tbUser_TextChanged(object sender, EventArgs e)
+        {
+                   
+        }   
     }
 }

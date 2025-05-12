@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.tComp = new System.Windows.Forms.Button();
+            this.lblName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -41,20 +43,44 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // tComp
+            // 
+            this.tComp.Location = new System.Drawing.Point(13, 69);
+            this.tComp.Name = "tComp";
+            this.tComp.Size = new System.Drawing.Size(75, 23);
+            this.tComp.TabIndex = 1;
+            this.tComp.Text = "Total Completion";
+            this.tComp.UseVisualStyleBackColor = true;
+            this.tComp.Click += new System.EventHandler(this.tComp_Click);
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(655, 21);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(57, 13);
+            this.lblName.TabIndex = 2;
+            this.lblName.Text = "UserName";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.tComp);
             this.Controls.Add(this.button1);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button tComp;
+        private System.Windows.Forms.Label lblName;
     }
 }

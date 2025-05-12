@@ -12,14 +12,23 @@ namespace Actual_Assignment
 {
     public partial class Form2 : Form
     {
+        int tcomp;
         public Form2()
         {
             InitializeComponent();
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
+
+        private void tComp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"You've completed {tcomp}");
+           
+        }
+        
     }
 }
