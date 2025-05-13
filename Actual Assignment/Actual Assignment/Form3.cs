@@ -12,7 +12,8 @@ namespace Actual_Assignment
 {
     public partial class Form3 : Form
     {
-        
+        //Form2 variable
+        public static Form2 f2;
         public Form3()
         {
             InitializeComponent();
@@ -25,7 +26,8 @@ namespace Actual_Assignment
 
         private void btnF2_Click(object sender, EventArgs e)
         {
-            
+            Form1.f1.NewForm(f2);
+
         }
     }
 }
