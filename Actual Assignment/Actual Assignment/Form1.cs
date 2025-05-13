@@ -13,15 +13,18 @@ namespace Actual_Assignment
     public partial class Form1 : Form
     {
         Form2 f2 = new Form2();
-        
        
         public Form1()
         {
             InitializeComponent();
             TextBox textBox1 = new TextBox();
             f2.Owner = this;
+            tbU = tbUser;
+            
         }
+    
 
+   
 
 
 
@@ -37,7 +40,9 @@ namespace Actual_Assignment
 
         private void btnProc_Click(object sender, EventArgs e)
         {
-            
+
+            Form2.f2.lblU.Text = tbU.Text;
+
             if (textBox1.Text == "abcd")
             {
                 f2.Show();
@@ -56,6 +61,11 @@ namespace Actual_Assignment
         private void tbUser_TextChanged(object sender, EventArgs e)
         {
                    
-        }   
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -28,20 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.tComp = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.btnF3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnClose
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Close";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnClose.Location = new System.Drawing.Point(760, -2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(39, 27);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.button1_Click);
             // 
             // tComp
             // 
@@ -56,20 +58,31 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(655, 21);
+            this.lblName.Location = new System.Drawing.Point(159, 21);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(57, 13);
             this.lblName.TabIndex = 2;
             this.lblName.Text = "UserName";
+            // 
+            // btnF3
+            // 
+            this.btnF3.Location = new System.Drawing.Point(12, 363);
+            this.btnF3.Name = "btnF3";
+            this.btnF3.Size = new System.Drawing.Size(181, 75);
+            this.btnF3.TabIndex = 4;
+            this.btnF3.Text = "Form3 (placeholder)";
+            this.btnF3.UseVisualStyleBackColor = true;
+            this.btnF3.Click += new System.EventHandler(this.btnF3_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnF3);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.tComp);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnClose);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
@@ -79,8 +92,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button tComp;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.Button btnF3;
     }
 }

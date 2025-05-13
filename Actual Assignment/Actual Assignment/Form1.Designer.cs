@@ -33,6 +33,7 @@
             this.btnProc = new System.Windows.Forms.Button();
             this.lblDisp = new System.Windows.Forms.Label();
             this.tbUser = new System.Windows.Forms.TextBox();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -80,11 +81,22 @@
             this.tbUser.TabIndex = 0;
             this.tbUser.TextChanged += new System.EventHandler(this.tbUser_TextChanged);
             // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(371, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(38, 35);
+            this.btnClose.TabIndex = 4;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 659);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.tbUser);
             this.Controls.Add(this.lblDisp);
             this.Controls.Add(this.btnProc);
@@ -104,6 +116,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnProc;
         private System.Windows.Forms.Label lblDisp;
+        private System.Windows.Forms.TextBox tbU;
         private System.Windows.Forms.TextBox tbUser;
+        private System.Windows.Forms.Button btnClose;
     }
 }
