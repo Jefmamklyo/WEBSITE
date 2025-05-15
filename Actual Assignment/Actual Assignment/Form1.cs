@@ -14,38 +14,37 @@ namespace Actual_Assignment
     {
         Form2 f2 = new Form2();
         public static Form1 f1;
+  
         public Form1()
         {
             InitializeComponent();
             TextBox textBox1 = new TextBox();
             f2.Owner = this;
             tbU = tbUser;
-            f1 = this;
+            Form f1 = this;
         }
+    
 
-        //new form creartion mehtod SHARE THIS WITH OTHER FORMS
-        public Form NewForm(Form x)
+        //FormSwitch
+        public Form formswitch(Form x)
         {
             x.StartPosition = FormStartPosition.Manual;
             x.Location = this.Location;
-            this.Close();
             x.Show();
+            this.Hide();
             return x;
-
         }
+   
 
- 
         private void btnProc_Click(object sender, EventArgs e)
         {
-            //UserName
+
             Form2.f2.lblU.Text = tbU.Text;
 
             if (textBox1.Text == "abcd")
             {
-                f2.Show();
-                this.Hide();
-                
-
+                formswitch(f2);
+               
             }
             else
             {
@@ -54,6 +53,7 @@ namespace Actual_Assignment
             }
           
         }
+
 
         private void btnClose_Click(object sender, EventArgs e)
         {

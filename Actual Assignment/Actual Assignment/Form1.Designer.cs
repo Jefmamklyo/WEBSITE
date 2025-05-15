@@ -53,7 +53,6 @@
             this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(276, 20);
             this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnProc
             // 
@@ -79,7 +78,6 @@
             this.tbUser.Name = "tbUser";
             this.tbUser.Size = new System.Drawing.Size(100, 20);
             this.tbUser.TabIndex = 0;
-            this.tbUser.TextChanged += new System.EventHandler(this.tbUser_TextChanged);
             // 
             // btnClose
             // 
@@ -104,7 +102,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

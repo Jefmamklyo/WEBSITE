@@ -12,8 +12,7 @@ namespace Actual_Assignment
 {
     public partial class Form3 : Form
     {
-        //Form2 variable
-        public static Form2 f2;
+        
         public Form3()
         {
             InitializeComponent();
@@ -26,7 +25,40 @@ namespace Actual_Assignment
 
         private void btnF2_Click(object sender, EventArgs e)
         {
-            Form1.f1.NewForm(f2);
+            this.Owner.Show();
+            this.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbWrite_TextChanged(object sender, EventArgs e)
+        {
+            string[] lbltextcode = tbWrite.Text.Split('\n');
+            int count = 1;
+            lblCode.Text = "";
+
+            foreach (string text in lbltextcode)
+            {
+                lblCode.Text = string.Format("{0}{1}  {2} \n", lblCode.Text, count, text);
+                count++;
+            }
+
+        }
+
+        private void btnProceed_Click(object sender, EventArgs e)
+        {
+            int count = 0;
+
+
+          
+
+
+
+
+
 
         }
     }

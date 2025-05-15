@@ -1,37 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Actual_Assignment
 {
     public partial class Form2 : Form
     {
-        //TotalCompletion  varibable
+        
+        //TotalCinpoletoin shower varibable
         static int tcomp;
         //UserName
         public Label lblU;
+        //OwnerShip//FormVariables
+        Form3 f3 = new Form3();       
         public static Form2 f2;
-        //OwnerShip
-        Form3 f3 = new Form3();
 
-     
+
+        //new form creartion mehtod SHARE THIS WITH OTHER FORMS
+
+
         public Form2()
         {
             InitializeComponent();
             f2 = this;
             lblU = lblName;
-
+            f3.Owner = this;
         }
-
-        
-     
-
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -46,7 +39,10 @@ namespace Actual_Assignment
 
         private void btnF3_Click(object sender, EventArgs e)
         {
-            Form1.f1.NewForm(f3);
+            f3.StartPosition = FormStartPosition.Manual;
+            f3.Location = this.Location;
+            f3.Show();
+            this.Hide();
         }
     }
 }
