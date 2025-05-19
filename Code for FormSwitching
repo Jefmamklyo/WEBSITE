@@ -1,0 +1,26 @@
+
+
+//Make sure to make  aseperate method in order to cloes the form instad of hididing it
+
+public static class FormSwitcher
+        {
+                public static Form1 f1;
+                public static Form2 f2;
+                public static Form3 f3;
+
+                static FormSwitcher() // Initiliaes Forms
+                {
+                    f1 = new Form1();
+                    f2 = new Form2();
+                    f3 = new Form3();
+                }
+
+                public static void SwitchForm(Form thisForm, Form switchForm)
+            {
+                switchForm.StartPosition = FormStartPosition.Manual;
+                switchForm.Location = thisForm.Location;
+
+                switchForm.Show();
+                thisForm.Hide();
+            }
+        }
