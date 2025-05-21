@@ -5,25 +5,23 @@ namespace Actual_Assignment
 {
     public partial class Form2 : Form
     {
-        
+
         //TotalCinpoletoin shower varibable
-        static int tcomp;
+        public static int completionf4 = 0;
+        public static int completionf3 = 0;
         //UserName
-        public Label lblU;
-        //OwnerShip//FormVariables
-        Form3 f3 = new Form3();       
-        public static Form2 f2;
+        public new Label lblU;
 
-
-        //new form creartion mehtod SHARE THIS WITH OTHER FORMS
 
 
         public Form2()
         {
             InitializeComponent();
-            f2 = this;
+            Label lblName = new Label();
             lblU = lblName;
-            f3.Owner = this;
+
+
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,18 +29,30 @@ namespace Actual_Assignment
             Application.Exit();
         }
 
-        private void tComp_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show($"You've completed {tcomp}");
-           
-        }
+
 
         private void btnF3_Click(object sender, EventArgs e)
         {
-            f3.StartPosition = FormStartPosition.Manual;
-            f3.Location = this.Location;
-            f3.Show();
-            this.Hide();
+            Form1.formManage.f3 = new Form3();
+            Form1.formManage.SwitchForm(this, Form1.formManage.f3);
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnF4_Click(object sender, EventArgs e)
+        {
+            Form1.formManage.f4 = new Form4();
+            Form1.formManage.SwitchForm(this, Form1.formManage.f4);
+        }
+
+        private void btnTcomp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"You've completed:\n " +
+                $"Block code Test :{completionf4} times\n" +
+                $"Syntax Test {completionf3} times");
         }
     }
 }

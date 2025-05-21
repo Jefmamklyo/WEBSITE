@@ -76,7 +76,7 @@
             // 
             this.tbUser.Location = new System.Drawing.Point(59, 338);
             this.tbUser.Name = "tbUser";
-            this.tbUser.Size = new System.Drawing.Size(100, 20);
+            this.tbUser.Size = new System.Drawing.Size(276, 20);
             this.tbUser.TabIndex = 0;
             // 
             // btnClose
@@ -102,7 +102,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form2";
-
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,7 +113,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnProc;
         private System.Windows.Forms.Label lblDisp;
-        private System.Windows.Forms.TextBox tbU;
         private System.Windows.Forms.TextBox tbUser;
         private System.Windows.Forms.Button btnClose;
     }

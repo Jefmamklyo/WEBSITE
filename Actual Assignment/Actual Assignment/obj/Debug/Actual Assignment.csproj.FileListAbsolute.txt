@@ -10,3 +10,15 @@ H:\Programming\Actual Assignment\Actual Assignment\obj\Debug\Actual Assignment.e
 H:\Programming\Actual Assignment\Actual Assignment\obj\Debug\Actual Assignment.pdb
 H:\Programming\Actual Assignment\Actual Assignment\obj\Debug\Actual_Assignment.Form2.resources
 H:\Programming\Actual Assignment\Actual Assignment\obj\Debug\Actual_Assignment.Form3.resources
+C:\aakash\.Net\WEBSITE-main\WEBSITE-main\Actual Assignment\Actual Assignment\bin\Debug\Actual Assignment.exe
+C:\aakash\.Net\WEBSITE-main\WEBSITE-main\Actual Assignment\Actual Assignment\bin\Debug\Actual Assignment.pdb
+C:\aakash\.Net\WEBSITE-main\WEBSITE-main\Actual Assignment\Actual Assignment\obj\Debug\Actual Assignment.csproj.AssemblyReference.cache
+C:\aakash\.Net\WEBSITE-main\WEBSITE-main\Actual Assignment\Actual Assignment\obj\Debug\Actual_Assignment.Form1.resources
+C:\aakash\.Net\WEBSITE-main\WEBSITE-main\Actual Assignment\Actual Assignment\obj\Debug\Actual_Assignment.Form2.resources
+C:\aakash\.Net\WEBSITE-main\WEBSITE-main\Actual Assignment\Actual Assignment\obj\Debug\Actual_Assignment.Form3.resources
+C:\aakash\.Net\WEBSITE-main\WEBSITE-main\Actual Assignment\Actual Assignment\obj\Debug\Actual_Assignment.Properties.Resources.resources
+C:\aakash\.Net\WEBSITE-main\WEBSITE-main\Actual Assignment\Actual Assignment\obj\Debug\Actual Assignment.csproj.GenerateResource.cache
+C:\aakash\.Net\WEBSITE-main\WEBSITE-main\Actual Assignment\Actual Assignment\obj\Debug\Actual Assignment.csproj.CoreCompileInputs.cache
+C:\aakash\.Net\WEBSITE-main\WEBSITE-main\Actual Assignment\Actual Assignment\obj\Debug\Actual Assignment.exe
+C:\aakash\.Net\WEBSITE-main\WEBSITE-main\Actual Assignment\Actual Assignment\obj\Debug\Actual Assignment.pdb
+C:\aakash\.Net\WEBSITE-main\WEBSITE-main\Actual Assignment\Actual Assignment\obj\Debug\Actual_Assignment.Form4.resources
