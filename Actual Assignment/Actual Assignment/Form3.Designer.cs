@@ -34,8 +34,6 @@
             this.lblTextDisp = new System.Windows.Forms.Label();
             this.lblCode = new System.Windows.Forms.Label();
             this.btnProceed = new System.Windows.Forms.Button();
-            this.lblError = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnClose
@@ -60,10 +58,10 @@
             // 
             // tbWrite
             // 
-            this.tbWrite.Location = new System.Drawing.Point(1, 108);
+            this.tbWrite.Location = new System.Drawing.Point(12, 108);
             this.tbWrite.Multiline = true;
             this.tbWrite.Name = "tbWrite";
-            this.tbWrite.Size = new System.Drawing.Size(139, 36);
+            this.tbWrite.Size = new System.Drawing.Size(319, 330);
             this.tbWrite.TabIndex = 3;
             this.tbWrite.Text = " ";
             this.tbWrite.TextChanged += new System.EventHandler(this.tbWrite_TextChanged);
@@ -73,16 +71,15 @@
             this.lblTextDisp.AutoSize = true;
             this.lblTextDisp.Location = new System.Drawing.Point(154, 7);
             this.lblTextDisp.Name = "lblTextDisp";
-            this.lblTextDisp.Size = new System.Drawing.Size(204, 26);
+            this.lblTextDisp.Size = new System.Drawing.Size(35, 13);
             this.lblTextDisp.TabIndex = 4;
-            this.lblTextDisp.Text = "This is your introduction on syntax\r\n{finish this sentence about what syntax is}\r" +
-    "\n";
+            this.lblTextDisp.Text = "label1";
             this.lblTextDisp.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblCode
             // 
             this.lblCode.AutoSize = true;
-            this.lblCode.Location = new System.Drawing.Point(146, 111);
+            this.lblCode.Location = new System.Drawing.Point(370, 108);
             this.lblCode.Name = "lblCode";
             this.lblCode.Size = new System.Drawing.Size(42, 13);
             this.lblCode.TabIndex = 5;
@@ -98,34 +95,11 @@
             this.btnProceed.UseVisualStyleBackColor = true;
             this.btnProceed.Click += new System.EventHandler(this.btnProceed_Click);
             // 
-            // lblError
-            // 
-            this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(-2, 147);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(38, 13);
-            this.lblError.TabIndex = 7;
-            this.lblError.Text = "errorlbl";
-            this.lblError.Click += new System.EventHandler(this.lblError_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(535, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 78);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "This labael is here to tell you wha tto do\r\n\r\nMake another course For a drag and " +
-    "drop thing basics\r\n\r\nMake aonther course fo rsyntax which teachees \r\nlike consol" +
-    "e.write lien or read line\r\n";
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnProceed);
             this.Controls.Add(this.lblCode);
             this.Controls.Add(this.lblTextDisp);
@@ -147,7 +121,5 @@
         private System.Windows.Forms.Label lblTextDisp;
         private System.Windows.Forms.Label lblCode;
         private System.Windows.Forms.Button btnProceed;
-        private System.Windows.Forms.Label lblError;
-        private System.Windows.Forms.Label label1;
     }
 }
