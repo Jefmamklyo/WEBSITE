@@ -38,7 +38,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(760, -2);
+            this.btnClose.Location = new System.Drawing.Point(348, 12);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(39, 27);
             this.btnClose.TabIndex = 0;
@@ -49,7 +49,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(159, 21);
+            this.lblName.Location = new System.Drawing.Point(22, 12);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(57, 13);
             this.lblName.TabIndex = 2;
@@ -58,27 +58,27 @@
             // 
             // btnF3
             // 
-            this.btnF3.Location = new System.Drawing.Point(13, 278);
+            this.btnF3.Location = new System.Drawing.Point(184, 74);
             this.btnF3.Name = "btnF3";
             this.btnF3.Size = new System.Drawing.Size(181, 75);
             this.btnF3.TabIndex = 4;
-            this.btnF3.Text = "Form3 (placeholder)";
+            this.btnF3.Text = "Course 2";
             this.btnF3.UseVisualStyleBackColor = true;
             this.btnF3.Click += new System.EventHandler(this.btnF3_Click);
             // 
             // btnF4
             // 
-            this.btnF4.Location = new System.Drawing.Point(200, 278);
+            this.btnF4.Location = new System.Drawing.Point(4, 74);
             this.btnF4.Name = "btnF4";
             this.btnF4.Size = new System.Drawing.Size(174, 75);
             this.btnF4.TabIndex = 5;
-            this.btnF4.Text = "Form4(PlaceHolder)";
+            this.btnF4.Text = "Course 1";
             this.btnF4.UseVisualStyleBackColor = true;
             this.btnF4.Click += new System.EventHandler(this.btnF4_Click);
             // 
             // btnTcomp
             // 
-            this.btnTcomp.Location = new System.Drawing.Point(589, 278);
+            this.btnTcomp.Location = new System.Drawing.Point(4, 155);
             this.btnTcomp.Name = "btnTcomp";
             this.btnTcomp.Size = new System.Drawing.Size(104, 60);
             this.btnTcomp.TabIndex = 6;
@@ -90,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(432, 235);
             this.Controls.Add(this.btnTcomp);
             this.Controls.Add(this.btnF4);
             this.Controls.Add(this.btnF3);

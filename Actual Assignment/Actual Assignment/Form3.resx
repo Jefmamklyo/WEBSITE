@@ -117,4 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblTextDisp.Text" xml:space="preserve">
+    <value>This is your introduction on syntax
+In c#, if you are trying to storea  value in a variable,
+you would write:
+{variable} {variable name}  = {variable value}; 
+in that order.
+If you want to print 2 variables together you would
+write:
+Console.ReadLine({variable1}+{variable2});
+ps: if you are trying to store a string or char, 
+sorround them with "" eg: "this is a string:"
+</value>
+  </data>
 </root>

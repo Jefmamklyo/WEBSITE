@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.btnf2 = new System.Windows.Forms.Button();
             this.lblop1 = new System.Windows.Forms.Label();
             this.lblop2 = new System.Windows.Forms.Label();
@@ -47,7 +48,7 @@
             this.btnf2.Name = "btnf2";
             this.btnf2.Size = new System.Drawing.Size(136, 71);
             this.btnf2.TabIndex = 0;
-            this.btnf2.Text = "Form2  (placeholder)";
+            this.btnf2.Text = "Return";
             this.btnf2.UseVisualStyleBackColor = true;
             this.btnf2.Click += new System.EventHandler(this.btnf2_Click);
             // 
@@ -102,7 +103,6 @@
             this.panBorder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panBorder.Controls.Add(this.tbAns);
             this.panBorder.Controls.Add(this.btnNext);
-            this.panBorder.Controls.Add(this.lblText3);
             this.panBorder.Cursor = System.Windows.Forms.Cursors.Default;
             this.panBorder.Location = new System.Drawing.Point(117, 117);
             this.panBorder.Name = "panBorder";
@@ -114,11 +114,11 @@
             this.lblText3.AutoSize = true;
             this.lblText3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblText3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblText3.Location = new System.Drawing.Point(-4, 0);
+            this.lblText3.Location = new System.Drawing.Point(130, 1);
             this.lblText3.Name = "lblText3";
-            this.lblText3.Size = new System.Drawing.Size(220, 26);
+            this.lblText3.Size = new System.Drawing.Size(241, 130);
             this.lblText3.TabIndex = 9;
-            this.lblText3.Text = "Hello this is your introduction to basics of c#, \r\n(Write eplaation);";
+            this.lblText3.Text = resources.GetString("lblText3.Text");
             this.lblText3.Click += new System.EventHandler(this.lblText3_Click);
             // 
             // lblError
@@ -126,13 +126,13 @@
             this.lblError.AutoSize = true;
             this.lblError.Location = new System.Drawing.Point(395, 101);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(39, 13);
+            this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 11;
-            this.lblError.Text = "lblError";
+            this.lblError.Click += new System.EventHandler(this.lblError_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(757, 1);
+            this.btnExit.Location = new System.Drawing.Point(470, 1);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(42, 40);
             this.btnExit.TabIndex = 12;
@@ -144,7 +144,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(522, 262);
+            this.Controls.Add(this.lblText3);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblop3);

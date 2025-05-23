@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.btnClose = new System.Windows.Forms.Button();
             this.btnF2 = new System.Windows.Forms.Button();
             this.tbWrite = new System.Windows.Forms.TextBox();
@@ -40,7 +41,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(759, 0);
+            this.btnClose.Location = new System.Drawing.Point(444, 7);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(39, 27);
             this.btnClose.TabIndex = 1;
@@ -54,7 +55,7 @@
             this.btnF2.Name = "btnF2";
             this.btnF2.Size = new System.Drawing.Size(123, 66);
             this.btnF2.TabIndex = 2;
-            this.btnF2.Text = "Form2 PlaceHolder";
+            this.btnF2.Text = "Return";
             this.btnF2.UseVisualStyleBackColor = true;
             this.btnF2.Click += new System.EventHandler(this.btnF2_Click);
             // 
@@ -71,12 +72,11 @@
             // lblTextDisp
             // 
             this.lblTextDisp.AutoSize = true;
-            this.lblTextDisp.Location = new System.Drawing.Point(154, 7);
+            this.lblTextDisp.Location = new System.Drawing.Point(159, 7);
             this.lblTextDisp.Name = "lblTextDisp";
-            this.lblTextDisp.Size = new System.Drawing.Size(204, 26);
+            this.lblTextDisp.Size = new System.Drawing.Size(248, 130);
             this.lblTextDisp.TabIndex = 4;
-            this.lblTextDisp.Text = "This is your introduction on syntax\r\n{finish this sentence about what syntax is}\r" +
-    "\n";
+            this.lblTextDisp.Text = resources.GetString("lblTextDisp.Text");
             this.lblTextDisp.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblCode
@@ -84,13 +84,12 @@
             this.lblCode.AutoSize = true;
             this.lblCode.Location = new System.Drawing.Point(146, 111);
             this.lblCode.Name = "lblCode";
-            this.lblCode.Size = new System.Drawing.Size(42, 13);
+            this.lblCode.Size = new System.Drawing.Size(0, 13);
             this.lblCode.TabIndex = 5;
-            this.lblCode.Text = "lblCode";
             // 
             // btnProceed
             // 
-            this.btnProceed.Location = new System.Drawing.Point(668, 414);
+            this.btnProceed.Location = new System.Drawing.Point(408, 182);
             this.btnProceed.Name = "btnProceed";
             this.btnProceed.Size = new System.Drawing.Size(75, 23);
             this.btnProceed.TabIndex = 6;
@@ -103,9 +102,8 @@
             this.lblError.AutoSize = true;
             this.lblError.Location = new System.Drawing.Point(-2, 147);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(38, 13);
+            this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 7;
-            this.lblError.Text = "errorlbl";
             this.lblError.Click += new System.EventHandler(this.lblError_Click);
             // 
             // label1
@@ -113,17 +111,14 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(535, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 78);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 8;
-            this.label1.Text = "This labael is here to tell you wha tto do\r\n\r\nMake another course For a drag and " +
-    "drop thing basics\r\n\r\nMake aonther course fo rsyntax which teachees \r\nlike consol" +
-    "e.write lien or read line\r\n";
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(484, 208);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnProceed);

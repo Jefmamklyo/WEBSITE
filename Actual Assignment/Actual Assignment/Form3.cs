@@ -93,7 +93,8 @@ namespace Actual_Assignment
             //0
             "Write a integer variable called 'X' which holds the integer 5",
             //1
-            "Great Job! Now write an string called HW that holds the sentence 'Hello World'"+count,
+            "Great Job! Now write an string called HW that holds \n" +
+            "the sentence 'Hello World'",
             //2
             "Nice! Now create a:" +
                 "integer called x which holds the number 4,\n" +
@@ -126,10 +127,11 @@ namespace Actual_Assignment
 
                     tm.reset();
                 }
-                if (count == 2 && tm.ContainCheck("int x  = 4") && tm.ContainCheck("int y = 7") && tm.ContainCheck("Console.WriteLine(x+y)"))
+                if (count == 2 && tm.ContainCheck("int x = 4") && tm.ContainCheck("int y = 7") && tm.ContainCheck("Console.WriteLine(x+y)"))
                 {
                     Form2.completionf3++;
                     tm.reset();
+                    btnProceed.Visible = false;
                    
                 }
                 tm.bery();

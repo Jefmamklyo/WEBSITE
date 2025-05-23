@@ -117,4 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblText3.Text" xml:space="preserve">
+    <value>Hello this is your introduction to basics of c#, 
+In c#, there are many types of variables including:
+int = stores numbers
+string = stores sentences
+bool = stores true or false
+If you want to display these, you would right:
+Console.WriteLine({variable});
+
+If you want to take a user input you would write:
+Console.ReadLine();</value>
+  </data>
 </root>

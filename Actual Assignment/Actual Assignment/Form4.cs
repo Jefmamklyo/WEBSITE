@@ -167,5 +167,10 @@ namespace Actual_Assignment
         {
             Application.Exit();
         }
+
+        private void lblError_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
