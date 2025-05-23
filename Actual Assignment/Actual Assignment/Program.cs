@@ -11,6 +11,9 @@ namespace Actual_Assignment
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// 
+        public static string memory = string.Empty;
+    
         [STAThread]
         static void Main()
         {

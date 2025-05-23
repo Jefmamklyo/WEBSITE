@@ -25,7 +25,7 @@ namespace Actual_Assignment
             InitializeComponent();
 
         
-            //Mouse event handelrs
+            //label event handelrs
             lblop1.MouseDown += label_MouseDown;
             lblop2.MouseDown += label_MouseDown;
             lblop3.MouseDown += label_MouseDown;
@@ -38,16 +38,13 @@ namespace Actual_Assignment
             tbAns.DragDrop += new DragEventHandler(tbAns_DragDrop);
             this.Controls.Add(tbAns);
 
-            //label initalisations
-            
-            lblop1.MouseDown += new MouseEventHandler(label_MouseDown);
            
         }
         //Drag enterNumber
         private void label_MouseDown(object sender, MouseEventArgs e)
         {
             Label label = sender as Label;
-            label.DoDragDrop(label.Text, DragDropEffects.Move);
+            label.DoDragDrop(label.Text, DragDropEffects.Copy);
             
         }
 
@@ -56,7 +53,7 @@ namespace Actual_Assignment
         {
             
           
-                e.Effect = DragDropEffects.Move;
+                e.Effect = DragDropEffects.Copy;
           
            
 
